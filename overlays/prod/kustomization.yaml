@@ -1,0 +1,12 @@
+# Examples of what's possible for the sake of a full picture.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: stage
+resources:
+- ../../base/
+patches:
+- path: replicas.yaml
+configMapGenerator:
+- envs:
+  - config.properties
+  name: my-kustom-configmap
