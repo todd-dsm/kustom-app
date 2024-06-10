@@ -1,19 +1,19 @@
 # kustom-app
 
-This is a simple example of using kustomize to manage multiple environments with overlays. It follows a simple [walk-through].
+This code follows a [walk-through] that demonstrates using kustomize to manage multiple environments with overlays.
 
 This walk-through is great but the code didn't age well. This repo is an attempt to correct those issues.
 
-The example is a simple webapp that has a deployment and a service. The deployment is a simple nginx container and the service is a NodePort service that exposes the deployment.
+This example is a simple webapp (nginx) with a `deployment` and a `service` (NodePort).
 
 ---
 
-Since the original walk-through is quick/simple, it's probably best to:
+Since the original walk-through is goes pretty quick, it's probably best to:
 
-1. Create your own repo and follow the walk-through
-2. ONLY use this repo as a reference for coding differences
+* Create your own repo and follow the walk-through
+* ONLY use this repo as a reference for coding differences
 
-The hope of this method would be that you learn everythign from the presenter and only use this to fill in the gaps. No sense in having to learn these thigns twice `;-)`
+The hope of this method would be that you learn everythign from the presenter and only use this code to fill in the gaps. No sense in having to learn these thigns twice `;-)`
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ For the sake of simplicity, just install the binary via Homebrew:
 brew install kustomize
 ```
 
-## References:
+## References
 
 * [Usage]
 * [Workflow] for off the shelf applications
